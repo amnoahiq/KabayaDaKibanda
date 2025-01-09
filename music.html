@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - Kabaya Da Kibanda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         <style>
+        /* General Reset */
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+     
+     /* Body */
+     body {
+         font-family: 'Roboto', sans-serif;
+         background-color: #121212; /* Dark background for better contrast */
+         color: #e0e0e0; /* Light text for readability */
+         line-height: 1.6;
+     }
+     
+     /* Header */
+     .header {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background-color: #1f1f1f; /* Dark header for a sleek look */
+         color: #ffffff;
+         padding: 15px 20px;
+         border-bottom: 2px solid #f39c12; /* Accent border */
+         text-align: center;
+     }
+     
+     .header .logo {
+         border-radius: 50%;
+         height: 65px;
+         width: 65px;
+         margin-right: 15px;
+         border: 2px solid #f39c12; /* Accent border */
+     }
+     
+     .header h1 {
+         font-size: 28px;
+         font-weight: bold;
+     }
+     
+     .header h1 span {
+         color: #f39c12; /* Accent color */
+     }
+     
+     /* About Section */
+     .about {
+         padding: 40px 20px;
+         text-align: center;
+         background-color: #1f1f1f;
+         border-radius: 15px;
+         margin: 20px;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     }
+     
+     .about h2 {
+         font-size: 28px;
+         margin-bottom: 20px;
+         color: #f39c12;
+     }
+     
+     .about p {
+         font-size: 16px;
+         max-width: 800px;
+         margin: 0 auto;
+         line-height: 1.8;
+     }
+     
+     /* Footer */
+     .footer {
+         background-color: #1f1f1f;
+         color: #e0e0e0;
+         padding: 20px 15px;
+         text-align: center;
+         border-top: 2px solid #f39c12;
+     }
+     
+     .footer-links {
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         margin-bottom: 10px;
+     }
+     
+     .footer-links a {
+         color: #f39c12;
+         text-decoration: none;
+         font-size: 16px;
+         transition: color 0.3s;
+     }
+     
+     .footer-links a:hover {
+         color: #ffffff;
+     }
+     
+     .footer-copy {
+         font-size: 14px;
+         margin-top: 10px;
+         color: #777;
+     }
+     
+     /* General Reset for Header */
+     .header h1 {
+         font-size: 28px;
+         font-weight: bold;
+         text-align: center;
+         color: #ffffff;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         position: relative;
+     }
+     
+     .header h1 span {
+         color: #f39c12;
+     }
+     /* Navbar */
+.navbar {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+     
+     /* Music Bars */
+     .music-bars {
+         display: flex;
+         gap: 3px;
+         align-items: center;
+     }
+     
+     .music-bars span {
+         display: inline-block;
+         width: 5px;
+         height: 20px;
+         background-color: #f39c12;
+         animation: bounce 1.2s infinite ease-in-out;
+         animation-delay: calc(var(--i) * 0.2s);
+     }
+     
+     .music-bars span:nth-child(1) {
+         --i: 0;
+     }
+     
+     .music-bars span:nth-child(2) {
+         --i: 1;
+     }
+     
+     .music-bars span:nth-child(3) {
+         --i: 2;
+     }
+     
+     .music-bars span:nth-child(4) {
+         --i: 3;
+     }
+     
+     /* Animation for Equalizer Effect */
+     @keyframes bounce {
+         0%, 100% {
+             transform: scaleY(1);
+         }
+         50% {
+             transform: scaleY(2);
+         }
+     }
+     
+     </style>
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="b.jpeg" alt="Logo" class="logo">
+        <h1>
+            Kabaya 
+            <span>Da Kibanda</span> 
+            Music 
+            <div class="music-bars">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<!-- Music Section -->
+<section class="music" style="padding: 50px 20px; background-color: #f4f4f4; text-align: center;">
+    <h2 style="font-size: 36px; font-weight: bold; color: #333; margin-bottom: 30px;">Listen to My Latest Tracks</h2>
+    <div class="tracks" style="display: flex; justify-content: space-evenly; gap: 30px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+        
+        <div class="track" style="background-color: #fff; border-radius: 15px; padding: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); width: 300px; text-align: center;">
+            <img src="ziki.jpg" alt="Track 1" style="width: 100%; height: auto; border-radius: 10px; max-height: 200px; object-fit: cover;">
+            <h3 style="font-size: 24px; color: #333; margin-top: 20px;">Yegwe</h3>
+            <audio controls style="width: 100%; margin-top: 10px;">
+                <source src="Yegwe Kabaya Da Kibanda.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <a href="Yegwe Kabaya Da Kibanda.mp3" download="Track Title 1" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px;">Download</a>
+        </div>
+        
+        <div class="track" style="background-color: #fff; border-radius: 15px; padding: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); width: 300px; text-align: center;">
+            <img src="Handup.jpg" alt="Track 2" style="width: 100%; height: auto; border-radius: 10px; max-height: 200px; object-fit: cover;">
+            <h3 style="font-size: 24px; color: #333; margin-top: 20px;">Tusimbude</h3>
+            <audio controls style="width: 100%; margin-top: 10px;">
+                <source src="Tusimbude by Kabaya Da Kibanda.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <a href="Tusimbude by Kabaya Da Kibanda.mp3" download="Track Title 2" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px;">Download</a>
+        </div>
+
+        <div class="track" style="background-color: #fff; border-radius: 15px; padding: 20px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); width: 300px; text-align: center;">
+            <img src="up.jpg" alt="Track 3" style="width: 100%; height: auto; border-radius: 10px; max-height: 200px; object-fit: cover;">
+            <h3 style="font-size: 24px; color: #333; margin-top: 20px;">Bongolito</h3>
+            <audio controls style="width: 100%; margin-top: 10px;">
+                Coming soon.
+            </audio>
+            <a href="music/track3.mp3" download="Track Title 3" style="display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px;">Coming Soon</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .track img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        max-height: 200px;
+    }
+
+    .track {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .track:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .track a {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .track a:hover {
+        background-color: #0056b3;
+    }
+
+    .tracks {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+</style>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2023-2025 Kabaya Da Kibanda Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>
